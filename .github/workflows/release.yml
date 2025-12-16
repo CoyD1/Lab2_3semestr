@@ -2,7 +2,7 @@ name: C++ CI
 
 on:
   push:
-    branches: [ lab2 ]
+    branches: [main]
 
 permissions:
   contents: write
@@ -64,7 +64,7 @@ jobs:
 
       - name: Build
         shell: bash
-        run: | 
+        run: |
 
           cmake -G "Ninja" -S . -B build \
             -DPROJECT_VERSION_MAJOR=${{ needs.bump_version.outputs.major }} \
