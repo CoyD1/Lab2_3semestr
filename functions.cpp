@@ -43,7 +43,7 @@ std::vector<std::tuple<int, int, int, int>> parse(const std::string &file_name)
     return ip_pool;
 }
 
-// Сортирует вектор IP-адресов в порядке убывания (лексикографически по кортежу).
+// Сортирует вектор IP-адресов в порядке убывания (лексикографически по кортежу)
 void mainSort(std::vector<std::tuple<int, int, int, int>> &start_vector)
 {
     std::sort(start_vector.begin(), start_vector.end(), [](const auto &a, const auto &b)
